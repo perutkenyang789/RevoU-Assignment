@@ -18,14 +18,13 @@
         </nav>
         <section id="input-boxes">
             <input type="number" placeholder="Celcius (°C)" class="input-box" id="celcius-input">
-            <!-- <input type="number" placeholder="Fahrenheit (°F)" class="input-box" id="fahrenheit-input"> -->
             <div id="output-box">
                 <p id="output-text">Fahrenheit (°F)</p>
             </div>
         </section>
         <footer id="button-section">
-            <button class="button" id="convert-button">Konversi</button>
-            <button class="button" id="reset-button">Reset</button>
+            <button class="button" onclick="calculate()">Konversi</button>
+            <button class="button" onclick="reset()">Reset</button>
         </footer>
     </div>
     <div class="section-box" id="calculation-explanatory">
@@ -34,7 +33,7 @@
         </header>
         <nav class="description-box" id="temperature-conversion">
             <h2 id="conversion-description">
-                <I>S</I><sub>(°F)</sub> = (°C × <sup>9</sup>&frasl;<sub>5</sub>) + 32 = °F
+                ---
             </h2>
         </nav>
         <section id="procedure-title">
@@ -47,5 +46,6 @@
             </p>
         </section>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
