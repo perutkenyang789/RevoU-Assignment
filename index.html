@@ -3,26 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Converter</title>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="Section-Box" id="input-section">
+    <div class="section-box" id="input-section">
         <header class="Title" id="main-title">
-            <h1>Website Converter</h1>
+            <h1>Temperature Converter</h1>
         </header>
-        <nav class="Description" id="input-guide">
-            <p>
+        <nav class="description-box" id="input-guide">
+            <p class="description" id="inpur-description">
                 Masukkan suhu derajat Celcius (°C) ke kotak di bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).
             </p>
         </nav>
-        <section>
-            <input type="number" name="Celcius" class="input-box" id="celcius-input">
-            <input type="number" name="Fahrenheit" class="input-box" id="fahrenheit-input">
+        <section id="input-boxes">
+            <input type="number" placeholder="Celcius (°C)" class="input-box" id="celcius-input">
+            <!-- <input type="number" placeholder="Fahrenheit (°F)" class="input-box" id="fahrenheit-input"> -->
+            <div id="output-box">
+                <p id="output-text">Fahrenheit (°F)</p>
+            </div>
         </section>
-        <footer>
+        <footer id="button-section">
             <button class="button" id="convert-button">Konversi</button>
             <button class="button" id="reset-button">Reset</button>
         </footer>
+    </div>
+    <div class="section-box" id="calculation-explanatory">
+        <header class="Title" id="explanatory-title">
+            <h1>Cara Konversi</h1>
+        </header>
+        <nav class="description-box" id="temperature-conversion">
+            <h2 id="conversion-description">
+                <I>S</I><sub>(°F)</sub> = (°C × <sup>9</sup>&frasl;<sub>5</sub>) + 32 = °F
+            </h2>
+        </nav>
+        <section id="procedure-title">
+            <h3>Rumus konversi dari Celcius (°C) ke Fahrenheit (°F)</h3>
+            <hr>
+        </section>
+        <section id="procedure-explanatory">
+            <p class="description" id="procedure-description">
+                <I>S</I><sub>(°F)</sub> = (<I>S</I><sub>(°C)</sub> × <sup>9</sup>&frasl;<sub>5</sub>) + 32
+            </p>
+        </section>
     </div>
 </body>
 </html>
